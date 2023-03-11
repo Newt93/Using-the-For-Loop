@@ -7,8 +7,56 @@
     DIRECTIONS: Below are solutions to all the practice problems for this learning objective.  You can try each solution by copying it into your "index.html" file and clicking "Run". 
     */
 
-  </script> 
- 
+    /* 
+    PROBLEM 1: You're building an application for teaching kids to count by printing out numbers from 1-10. Using a for loop, print to the console "1 Mississippi" to "10 Mississipi"
+    */
+    for (let i = 1; i <= 10; i++) {
+      console.log(`${i} Mississippi`);
+    }
+
+    /* 
+   PROBLEM 2: Using a for loop, log all the commands in the variable "commands" to the console.
+   */
+    const commands = [ 'print one', 'say hello', 'run', 'create variable', 'simon says compile', 'clone repository', 'fork project' ];
+
+    for (let i = 0; i < commands.length; i++) {
+      console.log(commands[ i ]);
+    }
+
+    /* 
+    PROBLEM 3: Using a for loop, print all 'even' numbers in 'arr'
+    */
+    let arr = [ 15, 24, 8, 32, 15, 27, 64, 7, 82, 22, 12, 15 ];
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[ i ] % 2 === 0) {
+        console.log(arr[ i ]);
+      }
+    }
+
+    /* 
+    PROBLEM 4: Using a for loop, delete all occurences of 15 in arr. Log arr to the console
+    */
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[ i ] === 15) {
+        arr.splice(i, 1);
+      }
+    }
+
+    /* 
+    PROBLEM 5 (DEBUGGING): The code below is meant to loop over and sum up all the numbers in the nums array. Your task is to log 'sum' to the console. Fix the code so the right value (10) is printed. 
+    */
+    const nums = [ 1, 2, 3, 4 ];
+    let sum = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+      sum += nums[ i ];
+    }
+
+    console.log(sum);
+
+  </script>
+
 </body>
 
 </html>
